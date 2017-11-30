@@ -1,1 +1,2 @@
-# intro1
+# Introduction to Computer Science
+
