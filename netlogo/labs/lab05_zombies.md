@@ -1,12 +1,12 @@
 # Lab 05 - Zombies
 
 ### New Commands
-`face`
-`min-one-of`
-`distance`
+`face` <br/>
+`min-one-of` <br/>
+`distance` <br/>
 
 ### Helpful Commands
-`set-default-shape <BREEDS> "SHAPENAME"`
+`set-default-shape <BREEDS> "SHAPENAME"` <br/>
 `create-<BREEDS>`
 
 
