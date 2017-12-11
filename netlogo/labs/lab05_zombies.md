@@ -5,20 +5,19 @@
 `min-one-of`
 `distance`
 
+### Helpful Commands
+`set-default-shape <BREEDS> "SHAPENAME"`
+`create-<BREEDS>`
 
-Remember:
-set-default-shape <Breeds> "SHAPENAME"
-create-<Breeds>
 
+### Examples
+Making new breeds of turtles
+```
+breed [players player]
+breed [monsters monster]
+```
 
-Homework:
-1 Complete the zombie lab (more will be added tomorrow)
-
-Demo:
-
-breed [ players player]
-breed [ monsters monster]
-
+Creating new breeds
 ```
 to setup
   ca
@@ -32,9 +31,10 @@ to setup
 end
 ```
 
+Standard go button
+```
 to go
-  every 1 / 30
-  [
+  every 1 / 30 [
     ask turtles[
       fd .1
       rt random 5
@@ -42,7 +42,10 @@ to go
     ]
   ]
 end
+```
 
+Printing out all the distances between two agents
+```
 to showdistances
   ;the player has to ask the monsters, so the monsters can use
   ;myself to refer to the player
@@ -50,29 +53,37 @@ to showdistances
    ask monsters[ show distance myself]
   ]
 end
+```
 
+Targeting the agent within an agentset with the smallest value of a specific property
+```
 to makeOneBig
-  ask min-one-of monsters [ color ] [set size 5]
+  ask min-one-of monsters [color] [set size 5]
 end
+```
 
+Asking turtles to face another turtle
+```
 to facePrevious
   ask turtles[
-    if who > 0
-    [
+    if who > 0 [
       face turtle (who - 1)
     ]
   ]
 end
+```
 
-to facepatch
+Asking turtles to face a patch
+```
+to facePatch
   ;if???
   ask turtles[
-    face one-of patches with [ pcolor = white]
+    face one-of patches with [pcolor = white]
   ]
 end
+```
 
-
-## Part I
+## Instructions
 1. Make two breeds: zombies and humans
 
 2. Make two buttons
@@ -89,16 +100,12 @@ end
 
 3. Human Behavior: wiggle randomly (for now)
 
-4. Zombie behavior:
-    Follow the closest person. (for now) Use the face command, and min-one-of.
-    The speed should be the same as the wiggle speed.
+4. Zombie behavior: Identify and follow the closest person. Use the commands `face` and `min-one-of`. The speed should be the same as the wiggle speed.
 
-5. Modify the zombie behavior:
-   ONLY FOLLOW the closest person if they are in a 10 unit radius.
-   When there are no people nearby, they should just wiggle.
+5. Modify the zombie behavior: ONLY FOLLOW the closest person if they are in a 10 unit radius. When there are no people nearby, they should just wiggle.
 
-6. Change their detection ability from a radius of 10, into a cone, 10 units / 90 degrees in front of the zombie.
+6. Change their detection ability from a radius of 10, into a cone of 10 units / 90 degrees in front of the zombie.
 
 7. Modify the humans to run away from the closest zombie.
 
-8. Modify the humans to run away from the closest zombie, only if it is in a 12 unit radius.
+8. Modify the humans to run away from the closest zombie within a 12 unit radius.
