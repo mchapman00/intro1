@@ -77,15 +77,15 @@ end
 
 2. Make two buttons
 * Setup:
-    Make 2 zombies and 5 humans.
-    They should all be person.
-    Place them around the world randomly.
-    Zombies should be green.
-    Humans should be blue.
+    - Make 2 zombies and 5 humans.
+    - They should all be person.
+    - Place them around the world randomly.
+    - Zombies should be green.
+    - Humans should be blue.
 
 * Go:
-    Zombies do the zombieBehavior function.
-    Humans do HumanBehavior function.
+    - Zombies perform the zombieBehavior function.
+    - Humans perform humanBehavior function.
 
 3. Human Behavior: wiggle randomly (for now)
 
