@@ -89,7 +89,7 @@ end
 2. Make two buttons
 * Setup:
     - Make 2 zombies and 5 humans.
-    - They should all be person.
+    - They should all be person shaped.
     - Place them around the world randomly.
     - Zombies should be green.
     - Humans should be blue.
