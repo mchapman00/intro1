@@ -1,4 +1,4 @@
-# Lab 06 - Zombies
+# Lab 06 - Zombies Part I
 
 ### New Commands
 `face` <br/>

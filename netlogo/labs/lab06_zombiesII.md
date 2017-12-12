@@ -1,3 +1,5 @@
+# Lab 06 - Zombies Part II
+
 ### Helpful Commands
 `in-radius` <br/>
 `any?` <br/>
