@@ -28,11 +28,11 @@ if any? things [
 ## Instructions
 DO NOT move on to the next part until ALL previous numbers are complete.
 
-For PART2: For each of the numbered objectives:
-    Write the number.
-    Since this section has more complex objectives, you can break it down into several chunks. (Write all the chunks at once)
-    Check off each chunk as you complete it.
-Modifications to lab:
+For each part II objectives:
+    * Write the number.
+    * Since this section has more complex objectives, you can break it down into several chunks. (Write all the chunks at once)
+    * Check off each chunk as you complete it.
+
 
 9. Change the following settings:
 * World size: 51 by 51 (set max-xcor to 25)
@@ -75,5 +75,5 @@ Modifications to lab:
 
 ####OPTIONAL
 [DO NOT USE THE SHAPES EDITOR IN CLASS!!!! (unless you are 100% done) ]
-a) Make different custom shapes (“zombie” , "uglyZombie" etc) in the shapes editor (don't spend too much time on this) Make sure you duplicate the “person” shape instead of just editing it, or you will lose the person shape.
-b) Use the multiple zombie shapes to make an animation if you want to practice animations using turtle shapes. They can cycle between 2-3 shapes when moving.
+*  Make different custom shapes (“zombie” , "uglyZombie" etc) in the shapes editor (don't spend too much time on this) Make sure you duplicate the “person” shape instead of just editing it, or you will lose the person shape.
+* Use the multiple zombie shapes to make an animation if you want to practice animations using turtle shapes. They can cycle between 2-3 shapes when moving.
