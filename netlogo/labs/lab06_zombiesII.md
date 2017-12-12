@@ -5,10 +5,10 @@
 `max-one-of` <br/>
 `face` <br/>
 
-###Examples
+### Examples
 To see if there are any things in a 5 unit radius
 ```
-if any? things in-radius 5[
+if any? things in-radius 5 [
    do stuff
 ]
 ```
@@ -73,7 +73,7 @@ For each part II objectives:
         When there is 1 or more stamina, the person moves away from the nearest zombie at speed 0.8, they lose 1 stamina.
         When there is less than 1 stamina, the person moves away from the nearest zombie at speed 0.1 (do not recover stamina here)
 
-####OPTIONAL
+#### OPTIONAL
 [DO NOT USE THE SHAPES EDITOR IN CLASS!!!! (unless you are 100% done) ]
 *  Make different custom shapes (“zombie” , "uglyZombie" etc) in the shapes editor (don't spend too much time on this) Make sure you duplicate the “person” shape instead of just editing it, or you will lose the person shape.
 * Use the multiple zombie shapes to make an animation if you want to practice animations using turtle shapes. They can cycle between 2-3 shapes when moving.
