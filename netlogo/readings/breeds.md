@@ -1,6 +1,12 @@
 # Breeds
 
-### Commands
+## Commands
 `breed` <br/>
 `breeds-own` <br/>
 `create-<breeds>` <br/>
+
+### breed
+
+### breeds-own
+
+### create

@@ -16,13 +16,14 @@ Running the `tick` command increases the value of the tick counter by 1.
 In order to initialize or start the tick counter, you must run the `reset-ticks` command.
 
 ### Sample Code
+The code below is all you need to get the tick counter increasing by 1 every second.
 ```
 to setup
   reset-ticks
 end
 
 to go
-  every .1 [
+  every 1 [
     tick
   ]
 end
