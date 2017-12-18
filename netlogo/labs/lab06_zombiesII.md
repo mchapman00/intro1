@@ -28,14 +28,6 @@ if any? things [
 ```
 
 ## Instructions
-DO NOT move on to the next part until ALL previous numbers are complete.
-
-For each part II objectives:
-    * Write the number.
-    * Since this section has more complex objectives, you can break it down into several chunks. (Write all the chunks at once)
-    * Check off each chunk as you complete it.
-
-
 9. Change the following settings:
 * World size: 51 by 51 (set max-xcor to 25)
 * Turtle sizes: 3
