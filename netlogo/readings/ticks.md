@@ -1,5 +1,5 @@
 # Ticks
-NetLogo keeps track of time using
+NetLogo keeps track of time using a unit called a tick.
 
 ## Commands
 [`ticks`](#ticks) <br/>
