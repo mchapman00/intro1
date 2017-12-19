@@ -7,12 +7,13 @@
 `mouse-ycor`
 
 ### mouse-down?
-
+reports true or false depending on whether your mouthe world
 
 ### mouse-inside?
-
+reports true or false depending on whether your mouse is inside of the world
 
 ### mouse-xcor
-
+reports the x-coordinate of your cursor
 
 ### mouse-ycor
+reports the y-coordinate of your cursor
