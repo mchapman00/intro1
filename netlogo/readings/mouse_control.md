@@ -17,3 +17,6 @@ reports the x-coordinate of your cursor
 
 ### mouse-ycor
 reports the y-coordinate of your cursor
+
+### Exercises
+1. Create a `go` procedure that allows you to click and drag a turtle. 
