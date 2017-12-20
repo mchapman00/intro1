@@ -13,3 +13,69 @@ See if you can create two global variables that keep track of when you start cli
 
 ### Extra
 Create three robot cannons that move around randomly and shoot at you.
+
+### Scaffold
+```
+breed [cannons cannon]
+breed [bullets bullet]
+;wasMouseDown? keeps track of the previous state of the mouse for comparison
+globals [wasMouseDown?]
+;you need to calculate how far a bullet
+;is supposed to travel when you create one
+;and store it in a variable
+
+to setup
+  ;insert your setup stuff
+  reset-ticks
+  set wasMouseDown? false
+end
+
+;HEY LOOK HERE - there's only one every!!! Everything is inside of that one every!
+to go
+  every .1 [
+    tick
+    cannonBehavior
+    bulletBehavior
+  ]
+end
+
+;
+to bulletBehavior
+  ask bullets [
+    fd .1
+    let futurex [pxcor] of patch-ahead 1
+    let futurey [pycor] of patch-ahead 1
+    if futurex = max-pxcor or futurex = min-pxcor or
+       futurey = max-pycor or futurey = min-pycor [
+      die
+    ]
+    ;you need a way to tell a bullet to stop
+  ]
+end
+
+;reports the diagonal length of the world
+to-report diagonal
+  let a (abs min-pxcor) + max-pxcor
+  let b (abs min-pycor) + max-pycor
+  report sqrt ((a * a) + (b * b))
+end
+
+to cannonBehavior
+  ifelse mouse-down? [
+    ;what if the mouse is down now and wasn't down before?
+    ask patch mouse-xcor mouse-ycor [
+      if any? cannons in-radius 3 [
+        ;what should wasMouseDown? be set to here
+        ask cannons [setxy mouse-xcor mouse-ycor]
+      ]
+    ]
+
+  ]
+  [if wasMouseDown? [
+       ;what do you do if the mouse was down before, but isn't down now?
+
+    ]
+    ;what should wasMouseDown? be set to here?
+  ]
+end  
+```
