@@ -79,3 +79,72 @@ to cannonBehavior
   ]
 end  
 ```
+
+## One Solution
+```
+breed [cannons cannon]
+breed [bullets bullet]
+globals [wasMouseDown? selectedCannon]
+bullets-own [fuel]
+
+to setup
+  ca
+  set-default-shape cannons "turtle"
+  set-default-shape bullets "circle"
+  create-cannons 1 [set heading 315 set size 3]
+  reset-ticks
+  set wasMouseDown? false
+end
+
+to go
+  every .01 [
+    tick
+    dragCannon
+    bulletBehavior
+  ]
+end
+
+to bulletBehavior
+  ask bullets [
+    fd .25
+    let futurex [pxcor] of patch-ahead 1
+    let futurey [pycor] of patch-ahead 1
+    if futurex = max-pxcor or
+       futurex = min-pxcor or
+       futurey = max-pycor or
+       futurey = min-pycor [
+         die
+       ]
+    set fuel fuel - .25
+    if fuel < 0 [die]
+  ]
+end
+
+to-report diagonal
+  let a (abs min-pxcor) + max-pxcor
+  let b (abs min-pycor) + max-pycor
+  report sqrt ((a * a) + (b * b))
+end
+
+to dragCannon
+  ifelse mouse-down? [
+    if wasMouseDown? = false [reset-ticks]
+    ask patch mouse-xcor mouse-ycor [
+      if any? cannons in-radius 3 [
+        set wasMouseDown? true
+        set selectedCannon min-one-of cannons [distance myself]
+        ask selectedCannon [setxy mouse-xcor mouse-ycor]
+      ]
+    ]
+
+  ]
+  [if wasMouseDown? [
+    create-bullets 1 [
+      set color blue
+      set fuel (ticks / 300) * diagonal
+      set heading [heading] of selectedCannon
+      setxy [xcor] of selectedCannon [ycor] of selectedCannon]
+    ]
+    set wasMouseDown? false]
+end  
+```

@@ -2,6 +2,7 @@
 
 |  Date      | Lesson |
 |:----------:|:------:|
+| 2017-12-20 |Exam Review|
 | 2017-12-20 |[Ticks III](netlogo/classwork/cannon.md)|
 | 2017-12-19 |[Ticks II](netlogo/classwork/cannon.md)|
 | 2017-12-18 |[Ticks](netlogo/readings/ticks.md)|
