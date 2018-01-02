@@ -4,8 +4,8 @@ NetLogo can keep track of time using a unit called a tick.
 ## Commands
 [`list`](#list) <br/>
 [`fput/lput`](#fput/lput) <br/>
-[`item`](#item)
-[`length`](#length)
+[`item`](#item) <br/>
+[`length`](#length) <br/>
 [`but-first/but-last`](#but-first/but-last)
 
 ### list
@@ -60,7 +60,7 @@ let back but-last stuff
 ```
 
 ### Mini-Lab - Move & Undo
-turtles own [ move-list ]
+* turtles-own [ move-list ]
 * setup button
     - creates one turtle, make move-list an empty list
     - set the shape to person    
@@ -93,7 +93,7 @@ WW <-turtle is on the right W
 W
 W <- origin here
 ```
-3. You pres undo a second time:
+3. You press undo a second time:
 You now have 3 white patches, and the Turtle has move-list of: ["up","up"]
 The world looks like:
 ```
