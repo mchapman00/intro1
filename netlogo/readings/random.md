@@ -16,6 +16,7 @@
 ### n-of <num>
 
 ### any?
+`any` checks to see if an agentset
 ```
 ask turtles with [shape = "squirrel"] [
   fd 1
