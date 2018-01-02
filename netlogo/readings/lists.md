@@ -28,9 +28,9 @@ How to make a list of size greater than 2
 - lists cannot be changed so in order to add elements to a list, you need to make a copy
 - `fput/lput` creates a copy a list with a new element added to either the front or back of the list
 ```
-let stuff [1 2 3 4]
-set stuff2 lput stuff 5
-set stuff3 fput stuff 5
+globals [stuff stuff2 stuff3]
+set stuff2 lput 5 stuff
+set stuff3 fput 5 stuff
 show stuff               
 show stuff2       
 show stuff3        
