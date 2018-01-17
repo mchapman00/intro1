@@ -1,5 +1,8 @@
 # Introduction to Computer Science
 
+## Announcements
+The CS Department Final will be on Monday, January 22nd. The exam will cover NetLogo only. Here is the [link](http://bert.stuy.edu/pbrooks/cribsheets/NetLogo-sheet-2018.pdf) to the NetLogo cribsheet that you will be given. Unfortunately you will not be able to bring your own. In the resources folder, you will find a practice final exam. 
+
 |  Date      | Lesson |
 |:----------:|:------:|
 | 2018-01-02 |[Lists](netlogo/readings/lists.md)|
