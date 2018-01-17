@@ -11,8 +11,11 @@ repeat length a [
 ]
 show answer
 ```
-A) 0		B) 12		C) 5		    D) 3			E) 45
-
+A) 0		<br/>
+B) 12		<br/>
+C) 5		    <br/>
+D) 3			<br/>
+E) 45<br/>
 
 2. [3pts] If the following commands are executed:
 ```
@@ -23,8 +26,11 @@ ask patches [
 ]
 ```
 Which of the following shapes will you see: (choose the best answer)
-A) one diagonal back line		B) one diagonal white line
-C) a single white patch			D) a white “+”			E) a white “X”
+A) one diagonal back line		<br/>
+B) one diagonal white line <br/>
+C) a single white patch			<br/>
+D) a white “+”		<br/>
+E) a white “X” <br/>
 
 3. [3pts] If turtle F and turtle G use different turn methods as follows:
 ```
@@ -38,9 +44,9 @@ to TurnG
 end
 ```
 Which of the following is true?   (choose the best answer)
-a) Turtle F has a higher chance to remain at the same heading, compared to G.
-b) Turtle G has a higher chance to turn right, compared to F
-c) Turtles F and G will have the same possible outcomes, and probabilities.
+a) Turtle F has a higher chance to remain at the same heading, compared to G. <br/>
+b) Turtle G has a higher chance to turn right, compared to F <br/>
+c) Turtles F and G will have the same possible outcomes, and probabilities. <br/>
 d) Turtle F has more possible resulting directions compared to Turtle G.
 
 4. [6pts] Write code to create 100 turtles, placing those turtles on random locations such that no two turtles are on the same patch, and no turtle is on a red patch. (assume at least 100 patches are non-red, and there are no existing turtles).
@@ -58,12 +64,12 @@ end
 
 8. [5pts] The named colors, (like red, green, blue, sky, magenta, etc.) in the Netlogo color palette have the values: 5, 15, 25, 35, 45, 55, 65, 75, 85, 95, 105, 115, 125, 135.  Create a reporter called RandomColor that will report a random one of these colors with equal probability.  You may not use either of the commands, one-of or n-of.
 
-9. [8pts] Assume that we have two breeds: Zombies and Humans. The zombies and humans have a somewhat difficult time coexisting (except on Mr. K’s t-shirts).  Write the procedure called FantasyOfK that compares the number of zombies and humans on each patch, and decides what to do based on these actions:  
--More zombies than humans on the patch makes the humans on the patch die.  
--More humans than zombies on the patch makes the zombies on the patch die.  
--The same number of zombies and humans on the patch:
-80% chance: All the zombies AND humans on the patch die
-20% chance: that they all survive.
+9. [8pts] Assume that we have two breeds: Zombies and Humans. The zombies and humans have a somewhat difficult time coexisting (except on Mr. K’s t-shirts).  Write the procedure called FantasyOfK that compares the number of zombies and humans on each patch, and decides what to do based on these actions:   <br/>
+-More zombies than humans on the patch makes the humans on the patch die. <br/>  
+-More humans than zombies on the patch makes the zombies on the patch die.   <br/>
+-The same number of zombies and humans on the patch: <br/>
+80% chance: All the zombies AND humans on the patch die <br/>
+20% chance: that they all survive. <br/>
 
 10. [6pts] Create a Go (forever) procedure that does the following: if the mouse cursor is in the Netlogo world and the mouse button is down, it should be dragging turtle 0 around wherever it goes, except when the mouse is pointing at a red patch. Turtle 0 cannot be dragged onto a red patch.
 
